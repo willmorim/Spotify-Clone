@@ -21,5 +21,5 @@ export const INITIAL_STATE = Immutable({
 /* Reducers to types */
 
 export const reducer = createReducer(INITIAL_STATE, {
-  [Type.SET_PODCAST_SUCCESS]: (state, { podcast }) => state.merge({ podcast, current: podcast.tracks[0].id }),
+  [Types.SET_PODCAST_SUCCESS]: (state, { podcast }) => state.merge({ podcast, current: podcast.tracks[0].id }),
 });
